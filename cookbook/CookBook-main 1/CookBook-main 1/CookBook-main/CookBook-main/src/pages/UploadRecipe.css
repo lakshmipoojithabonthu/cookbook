@@ -1,0 +1,120 @@
+/* 🌟 Page Layout */
+.upload-recipe-page {
+  padding: 3rem 0;
+  min-height: 60vh;
+}
+
+/* 🧭 Page Header */
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* 📘 Static Gradient Title (no animation, no wave) */
+.upload-title {
+  font-size: 5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  background: linear-gradient(90deg, #4c4a85, #e52e71, #ff8a00);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+  transition: none;
+}
+
+/* 🧾 Subtitle below heading */
+.upload-subtitle {
+  text-align: center;
+  color: #555;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+/* 🚫 Disable any hover or wave-like transformation */
+.upload-title:hover {
+  transform: none !important;
+  filter: none !important;
+  letter-spacing: -0.02em !important;
+  transition: none !important;
+}
+
+/* ✅ Upload Success Section */
+.upload-success {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 2rem;
+}
+
+.success-content {
+  text-align: center;
+  background: var(--bg-secondary);
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px var(--shadow);
+  max-width: 500px;
+}
+
+.success-content i {
+  font-size: 4rem;
+  color: var(--accent-green);
+  margin-bottom: 1rem;
+}
+
+.success-content h2 {
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+}
+
+.success-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* 🧱 Auth Prompt Styling */
+.auth-prompt {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: var(--bg-secondary);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.auth-prompt i {
+  font-size: 2rem;
+  color: var(--accent-orange);
+}
+
+.auth-prompt h3 {
+  margin-top: 1rem;
+  color: var(--text-primary);
+}
+
+.auth-prompt p {
+  color: var(--text-secondary);
+  margin: 1rem 0;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .upload-title {
+    font-size: 3rem;
+  }
+
+  .success-content {
+    padding: 2rem;
+  }
+
+  .auth-prompt {
+    padding: 2rem 1.5rem;
+  }
+}

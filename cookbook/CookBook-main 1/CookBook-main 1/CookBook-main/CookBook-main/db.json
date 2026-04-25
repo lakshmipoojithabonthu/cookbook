@@ -1,0 +1,28 @@
+{
+  "recipes": [
+    {
+      "name": "Maggie",
+      "cuisine": "Indian",
+      "category": "BreakFast",
+      "prepTime": 15,
+      "image": "https://i.ytimg.com/vi/lFChhgTpMhU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBI3vosYFfF3rxPMaZDHNH4NzoIkQ",
+      "ingredients": [
+        {
+          "name": "Water",
+          "measure": "1 Cup"
+        }
+      ],
+      "steps": [
+        "hiii",
+        "hello",
+        "Byee"
+      ],
+      "strMeal": "Maggie",
+      "strMealThumb": "https://i.ytimg.com/vi/lFChhgTpMhU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBI3vosYFfF3rxPMaZDHNH4NzoIkQ",
+      "strCategory": "BreakFast",
+      "strArea": "Indian",
+      "strInstructions": "hiii\nhello\nByee",
+      "id": 1
+    }
+  ]
+}

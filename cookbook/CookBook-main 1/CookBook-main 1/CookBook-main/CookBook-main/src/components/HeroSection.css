@@ -1,0 +1,134 @@
+/* 🌄 Hero Section Container */
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+  overflow: hidden;
+}
+
+/* 🖼 Background Image Styling */
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; /* ensures it fills the screen nicely */
+  z-index: -1;
+  pointer-events: none;
+  filter: brightness(0.85) contrast(1.05);
+}
+
+/* 🔳 Overlay to make text visible */
+.image-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* adjust opacity for brightness */
+  z-index: 0;
+}
+
+/* 🌟 Content */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+}
+
+/* 🍴 Icon Animation */
+.hero-icon {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-icon i {
+  font-size: 5rem;
+  color: #fff;
+  opacity: 0.9;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+/* 🌈 Animated Gradient Title */
+.hero-title {
+  font-size: 5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  background: linear-gradient(
+    90deg,
+    #ff4e50,
+    #f9d423,
+    #24c6dc,
+    #5433ff,
+    #ff4e50
+  );
+  background-size: 400% 400%;
+  background-clip: text;               /* ✅ added for cross-browser compatibility */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientFlow 6s ease infinite;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero-subtitle {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ffd166;
+  margin-top: 1.5rem;
+  letter-spacing: 1px;
+  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes glowFlow {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 138, 0, 0.6),
+                 0 0 20px rgba(229, 46, 113, 0.4);
+  }
+  100% {
+    text-shadow: 0 0 15px rgba(255, 138, 0, 0.8),
+                 0 0 30px rgba(229, 46, 113, 0.6);
+  }
+}
+
+/* 🍱 Cuisine Buttons */
+.hero-cuisine-tags {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-cuisine-button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #24c6dc, #5433ff);
+  box-shadow: 0 10px 24px rgba(84, 51, 255, 0.25);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  font-family: 'Outfit', 'Poppins', sans-serif;
+}
+
+.hero-cuisine-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px rgba(84, 51, 255, 0.35);
+}
